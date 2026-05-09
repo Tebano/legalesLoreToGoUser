@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoretoGo - Términos y Condiciones de Uso (Usuarios)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0EBFFE; /* Tu azul característico de LoretoGo */
+            --text-main: #2D3748;      /* Gris oscuro para lectura súper cómoda */
+            --text-headers: #1A202C;   /* Casi negro para títulos con fuerza */
+            --bg-body: #F7FAFC;        /* Fondo sutilmente gris para contraste premium */
+            --bg-card: #FFFFFF;        /* Tarjeta blanca limpia */
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--bg-body);
+            padding-bottom: 30px;
+        }
+
+        /* Estilo para el Logo LoreToGo que acordamos */
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-loreto {
+            color: var(--text-headers); /* LoreTo en tono oscuro sólido */
+        }
+
+        .logo-go {
+            color: var(--primary-color); /* Go con tu azul vibrante */
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: var(--text-headers);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .update-badge {
+            display: inline-block;
+            background-color: #EBF8FF;
+            color: #2B6CB0;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            margin-top: 5px;
+        }
+
+        .intro {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #F8FAFC;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            color: var(--text-headers);
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        h2 .section-number {
+            color: var(--primary-color);
+            margin-right: 8px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 0.92rem;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+
+        /* Estilización para las listas y subpuntos */
+        ul {
+            list-style: none;
+            margin-left: 5px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            font-size: 0.92rem;
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.4rem;
+            position: absolute;
+            left: 5px;
+            top: -4px;
+        }
+
+        .nested-point {
+            margin-top: 10px;
+            padding-left: 15px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .nested-title {
+            font-weight: 600;
+            color: var(--text-headers);
+            margin-bottom: 4px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid var(--bg-body);
+            font-size: 0.85rem;
+            color: #A0AEC0;
+        }
+
+        /* Animación y scroll fluido para celulares */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Ajustes responsivos para pantallas muy chicas */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px 5px;
+            }
+            .container {
+                padding: 25px 20px;
+                border-radius: 12px;
+            }
+            .logo {
+                font-size: 1.8rem;
+            }
+            h1 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-loreto">LoreTo</span><span class="logo-go">Go</span>
+            </div>
+            <h1>Términos y Condiciones de Uso</h1>
+            <div class="update-badge">Última actualización: 9 de mayo de 2026</div>
+        </header>
+
+        <main>
+            <div class="intro">
+                Hola. Antes de empezar a pedir, queremos ser claros contigo sobre cómo funciona LoretoGo y cuáles son las reglas del juego. Estos términos son un acuerdo entre tú y nosotros, y al crear una cuenta y usar la plataforma, estás aceptando lo que dice aquí. Si algo no te parece bien, lo entendemos, pero en ese caso te pedimos que no uses la app.
+            </div>
+
+            <section id="section-1">
+                <h2><span class="section-number">1.</span> QUÉ ES LORETOGO (Y QUÉ NO ES)</h2>
+                <p>LoretoGo es tecnología, no un restaurante ni una empresa de mensajería. Somos el puente que conecta tres partes:</p>
+                <ul>
+                    <li><strong>Tú:</strong> la persona que tiene hambre y hace el pedido.</li>
+                    <li><strong>Nuestros aliados comerciales:</strong> los restaurantes y negocios independientes que preparan lo que pediste.</li>
+                    <li><strong>Los socios repartidores:</strong> personas independientes que llevan tu pedido hasta donde estás.</li>
+                </ul>
+                <p>La relación de compraventa ocurre directamente entre tú y el restaurante. La entrega ocurre entre tú y el repartidor. LoretoGo facilita esa conexión con tecnología, pero no interviene en lo que pasa en la cocina ni en la calle.</p>
+            </section>
+
+            <section id="section-2">
+                <h2><span class="section-number">2.</span> TU CUENTA Y TU RESPONSABILIDAD</h2>
+                <p>Al registrarte, te pedimos lo básico: que la información que nos des sea verdadera y que la mantengas actualizada. La plataforma está diseñada para mayores de edad; si eres menor, necesitas la supervisión de un adulto responsable.</p>
+                <p>Tu cuenta es personal e intransferible. Tú eres responsable de todo lo que pase con ella, así que cuida tu contraseña. Si detectamos actividad inusual, sospechosa o fraudulenta, podemos suspender tu cuenta sin previo aviso mientras investigamos.</p>
+            </section>
+
+            <section id="section-3">
+                <h2><span class="section-number">3.</span> CUANDO ACTUALICEMOS ESTOS TÉRMINOS</h2>
+                <p>LoretoGo puede actualizar estos Términos y Condiciones en cualquier momento. Cuando hagamos cambios importantes, te avisaremos con al menos 15 días de anticipación por correo electrónico o mediante una notificación dentro de la app.</p>
+                <p>Si después de ese aviso sigues usando la plataforma, entendemos que aceptas los nuevos términos. Si no estás de acuerdo, puedes cerrar tu cuenta antes de que entren en vigor.</p>
+            </section>
+
+            <section id="section-4">
+                <h2><span class="section-number">4.</span> CÓMO FUNCIONA EL PAGO</h2>
+                <p>Tienes dos opciones para pagar:</p>
+                
+                <div class="nested-point">
+                    <div class="nested-title">A. Efectivo</div>
+                    <p>Pagas el total del pedido (productos + envío) directamente al repartidor cuando llega a tu puerta. El repartidor se encarga después de liquidar su parte con LoretoGo.</p>
+                    <p><strong>Importante:</strong> Si recibes un pedido en efectivo y no pagas, bloquearemos tu cuenta de forma permanente. También podríamos iniciar acciones legales para recuperar el daño patrimonial. Es una medida que esperamos nunca tener que usar.</p>
+                </div>
+
+                <div class="nested-point">
+                    <div class="nested-title">B. Tarjeta de crédito o débito (Stripe)</div>
+                    <p>Procesamos tu pago de forma segura a través de Stripe, una de las plataformas de cobro más confiables del mundo. LoretoGo recibe los fondos, paga al restaurante y liquida las ganancias del repartidor según los plazos acordados internamente.</p>
+                </div>
+
+                <div class="nested-point">
+                    <div class="nested-title">C. Cuota de servicio</div>
+                    <p>Verás una cuota de servicio en el desglose final de tu pedido. Es una tarifa pequeña que cubre el mantenimiento de la app, el soporte y el desarrollo continuo de la plataforma. Siempre está visible antes de confirmar.</p>
+                </div>
+            </section>
+
+            <section id="section-5">
+                <h2><span class="section-number">5.</span> CANCELACIONES, REEMBOLSOS Y PROBLEMAS CON TU PEDIDO</h2>
+                <p>Una vez que el restaurante acepta y comienza a preparar tu pedido, no es posible cancelarlo ni hacer reembolsos. Esto protege tanto al negocio como al repartidor, que ya puso en marcha su trabajo.</p>
+                <p>Si algo salió mal —el pedido llegó incompleto, diferente a lo que pediste o en mal estado— repórtalo desde la app dentro de los 30 minutos siguientes a la entrega. LoretoGo actuará como mediador con el restaurante para encontrar una solución. La responsabilidad sobre la calidad del producto recae en el aliado comercial que lo preparó.</p>
+                <p>Si el repartidor no llega, pierde el pedido o actúa de forma inapropiada, también puedes reportarlo desde la app. Tomamos estos casos con seriedad y los revisamos uno por uno.</p>
+            </section>
+
+            <section id="section-6">
+                <h2><span class="section-number">6.</span> LO QUE ESTÁ FUERA DE NUESTRO CONTROL</h2>
+                <p>Siendo honestos: hay cosas que no podemos garantizar. LoretoGo no es responsable por:</p>
+                <ul>
+                    <li>El sabor, temperatura, ingredientes, alérgenos o higiene de los alimentos preparados por los restaurantes. Eso es responsabilidad de cada negocio.</li>
+                    <li>Accidentes de tránsito, retrasos por tráfico, daños a propiedad o el comportamiento del repartidor durante la entrega. Los repartidores son contratistas independientes.</li>
+                    <li>Fallas de internet, errores de GPS, caídas del sistema o mal funcionamiento del dispositivo.</li>
+                </ul>
+                <p>Esto no significa que no nos importe —nos importa mucho— pero sí significa que nuestra responsabilidad tiene límites claros dado nuestro papel como intermediario tecnológico.</p>
+            </section>
+
+            <section id="section-7">
+                <h2><span class="section-number">7.</span> SI TU CONDUCTA NOS CAUSA UN DAÑO</h2>
+                <p>Si como resultado de tus acciones —por ejemplo, proporcionar una dirección falsa que cause un accidente, realizar un fraude o actuar de mala fe— LoretoGo, algún restaurante aliado o algún repartidor sufre un daño económico o legal, te comprometes a responder por ese daño. Esto incluye los costos legales que se deriven de la situación.</p>
+            </section>
+
+            <section id="section-8">
+                <h2><span class="section-number">8.</span> RESPETO MUTUO: CÓMO ESPERAMOS QUE TE COMPORTES</h2>
+                <p>LoretoGo es una comunidad. Detrás de cada entrega hay una persona real. Podemos suspender o pulsar a usuarios que:</p>
+                <ul>
+                    <li>Agredan física o verbalmente a un repartidor o empleado de un restaurante.</li>
+                    <li>Den direcciones falsas o de difícil acceso sin avisar.</li>
+                    <li>Realicen contracargos injustificados. Si tienes un problema con un cobro, contáctanos primero; tenemos un proceso para revisarlo contigo antes de escalar.</li>
+                </ul>
+            </section>
+
+            <section id="section-9">
+                <h2><span class="section-number">9.</span> RESEÑAS Y CONTENIDO QUE PUBLIQUES</h2>
+                <p>Si subes reseñas, calificaciones, fotos u otro contenido a la plataforma, sigues siendo el dueño de ese contenido. Sin embargo, al publicarlo nos das permiso de usarlo dentro de LoretoGo para mostrar información a otros usuarios y mejorar el servicio. No lo venderemos ni lo usaremos fuera de la plataforma sin tu autorización.</p>
+            </section>
+
+            <section id="section-10">
+                <h2><span class="section-number">10.</span> TUS DATOS PERSONALES</h2>
+                <p>Tratamos tu información conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP). Tus datos se usan para:</p>
+                <ul>
+                    <li>Gestionar tus pedidos y tu cuenta.</li>
+                    <li>Darte soporte cuando lo necesitas.</li>
+                    <li>Enviarte comunicaciones de LoretoGo (puedes darte de baja cuando quieras).</li>
+                </ul>
+                <p>Puedes ejercer tus derechos ARCO (Acceso, Rectificación, Cancelación y Oposición) escribiéndonos a través de los canales de soporte de la app. Consulta nuestro Aviso de Privacidad completo para más detalles.</p>
+            </section>
+
+            <section id="section-11">
+                <h2><span class="section-number">11.</span> SI DEJAMOS DE OPERAR O PAUSAMOS EL SERVICIO</h2>
+                <p>LoretoGo puede, en cualquier momento, modificar su área de cobertura, suspender zonas de operación o en casos extremos cerrar la plataforma. Si esto ocurre, te notificaremos con la mayor anticipación posible. Cualquier saldo o pedido pendiente en proceso al momento de la suspensión será atendido o reembolsado según los casos.</p>
+            </section>
+
+            <section id="section-12">
+                <h2><span class="section-number">12.</span> CLIMA EXTREMO Y FUERZA MAYOR</h2>
+                <p>Operamos en Baja California Sur, donde los huracanes y tormentas son una realidad. Si hay una alerta climática que ponga en riesgo la vida de los repartidores, pausamos el servicio sin previo aviso. La seguridad de las personas siempre va antes que cualquier pedido. Esto también aplica a otras situaciones de fuerza mayor: apagones generales, desastres naturales, pandemias o cualquier evento fuera de nuestro control.</p>
+            </section>
+
+            <section id="section-13">
+                <h2><span class="section-number">13.</span> LO QUE ES NUESTRO</h2>
+                <p>El nombre LoretoGo, nuestro logotipo, el personaje Bobo (el pájaro de patas azules) y el código de la app son propiedad exclusiva de sus desarrolladores, protegidos por las leyes de propiedad industrial en México. Queda prohibida cualquier reproducción o uso sin autorización escrita.</p>
+            </section>
+
+            <section id="section-14">
+                <h2><span class="section-number">14.</span> EN CASO DE CONFLICTO LEGAL</h2>
+                <p>Si surge alguna controversia que no podamos resolver directamente contigo, ambas partes nos sometemos a las leyes de los Estados Unidos Mexicanos y a la jurisdicción de los tribunales competentes en Loreto o La Paz, Baja California Sur, renunciando a cualquier otro fuero.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p style="text-align: center; margin-bottom: 8px;">Gracias por leer esto hasta el final.</p>
+            <p style="text-align: center; margin-bottom: 20px;">Sabemos que los términos legales no son lo más emocionante, pero es importante que los dos sepamos en qué terreno estamos. Si tienes dudas, escríbenos. Estamos aquí.</p>
+            <p style="text-align: center; font-weight: 600; color: var(--text-headers);">El equipo de LoretoGo</p>
+        </footer>
+    </div>
+
+</body>
+</html>
