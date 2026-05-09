@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LoretoGo | Comida a Domicilio en Loreto BCS | Delivery App</title>
+    <meta name="description" content="Pide comida a domicilio en Loreto, Baja California Sur. Disfruta de tus restaurantes favoritos con entregas rápidas. Pago seguro con tarjeta y efectivo.">
+    <meta name="keywords" content="Loreto, Loreto BCS, Loreto Baja California Sur, delivery Loreto, comida a domicilio Loreto, restaurantes en Loreto, pedir comida Loreto, LoretoGo, Loreto Go app">
+    <meta name="author" content="LoretoGo">
+    
+    <meta property="og:title" content="LoretoGo | Tu App de Delivery en Loreto, BCS">
+    <meta property="og:description" content="La primera plataforma de entrega a domicilio 100% loretana. Rápida, confiable y segura.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tebano.github.io/legalesLoreToGoUser/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #0EBFFE; /* Tu azul LoretoGo */
+            --primary-hover: #0caadb;
+            --text-dark: #1A202C;
+            --text-muted: #4A5568;
+            --bg-light: #F7FAFC;
+            --bg-white: #FFFFFF;
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-loreto { color: var(--text-dark); }
+        .logo-go { color: var(--primary-color); }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-nav {
+            background-color: var(--primary-color);
+            color: var(--bg-white) !important;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s !important;
+        }
+
+        .btn-nav:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 5%;
+            background: linear-gradient(135deg, #FFFFFF 0%, #EBF8FF 100%);
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .hero-text h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 35px;
+        }
+
+        .store-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .store-btn {
+            background-color: var(--text-dark);
+            color: var(--bg-white);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .store-btn:hover {
+            transform: translateY(-2px);
+            background-color: #2D3748;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* DUMMY MOCKUP PARA CAPTURAS */
+        .phone-mockup {
+            width: 280px;
+            height: 570px;
+            background-color: #1A202C;
+            border: 12px solid #2D3748;
+            border-radius: 36px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phone-screen-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #0EBFFE 0%, #05668D 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .phone-screen-placeholder img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        /* SECCIÓN CARACTERÍSTICAS (SEO OPTIMIZADO) */
+        .features {
+            padding: 80px 5%;
+            background-color: var(--bg-white);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+            font-size: 1.05rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--bg-light);
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+        }
+
+        /* SECCIÓN STRIPE (Cumplimiento obligatorio de políticas) */
+        .stripe-compliance {
+            padding: 80px 5%;
+            background-color: #EDF2F7;
+        }
+
+        .compliance-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--bg-white);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .compliance-item h4 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .compliance-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--text-dark);
+            color: #A0AEC0;
+            padding: 60px 5% 30px 5%;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            border-bottom: 1px solid #2D3748;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            color: var(--bg-white);
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #A0AEC0;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 5%;
+            }
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+            .store-buttons {
+                justify-content: center;
+            }
+            .compliance-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">
+            <span class="logo-loreto">LoreTo</span><span class="logo-go">Go</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#seguridad">Seguridad y Pagos</a></li>
+            <li><a href="legalesUsers.html" target="_blank">Términos</a></li>
+            <li><a href="avisoprivacidad.html" target="_blank" class="btn-nav">Privacidad</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <div class="hero-text">
+            <h1>El sabor de Loreto, <br><span>directo a tu puerta.</span></h1>
+            <p>
+                ¿Con antojo de unos tacos de pescado locales, comida gourmet o provisiones del súper? 
+                <strong>LoretoGo</strong> es la aplicación móvil de delivery diseñada para locales y visitantes en Loreto, Baja California Sur. Ordena de forma rápida, apoya al comercio local y recibe en minutos.
+            </p>
+            <div class="store-buttons">
+                <a href="#" class="store-btn">
+                    🤖 Android (Próximamente)
+                </a>
+                <a href="#" class="store-btn">
+                    🍎 iOS (Próximamente)
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="phone-mockup">
+                <div class="phone-screen-placeholder">
+                    <div style="font-size: 4rem; margin-bottom: 15px;">🐧</div>
+                    <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 5px;">LoreToGo</h2>
+                    <p style="font-size: 0.85rem; opacity: 0.9; max-width: 180px;">[Aquí irá tu captura de pantalla de la App]</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" id="beneficios">
+        <h2 class="section-title">¿Por qué usar LoretoGo en Loreto, BCS?</h2>
+        <p class="section-subtitle">Conectamos la gastronomía local y los comercios del pueblo mágico con repartidores independientes comprometidos.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🌴</span>
+                <h3>Orgullo y Apoyo Local</h3>
+                <p>Somos una app desarrollada en Baja California Sur. Al pedir por LoretoGo, las ganancias de las comisiones se quedan en la comunidad y fortalecen la economía loretana.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>Entregas Ultra Rápidas</h3>
+                <p>Nuestros socios repartidores conocen cada rincón, calle y colonia de Loreto, asegurando que tu comida llegue caliente y a tiempo.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">💳</span>
+                <h3>Pagos Flexibles y Seguros</h3>
+                <p>Elige tu método preferido. Paga cómodamente en efectivo al recibir tu pedido o utiliza tu tarjeta de crédito o débito de manera segura.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stripe-compliance" id="seguridad">
+        <div class="compliance-box">
+            <h2 class="section-title" style="margin-bottom: 10px;">Transparencia y Seguridad en tus Pagos</h2>
+            <p class="section-subtitle" style="margin-bottom: 20px;">Operamos bajo las normativas más estrictas de comercio electrónico de Visa, Mastercard y Stripe.</p>
+            
+            <div class="compliance-grid">
+                <div class="compliance-item">
+                    <h4>🔒 Procesamiento Encriptado</h4>
+                    <p>Los pagos con tarjeta de crédito o débito dentro de LoretoGo se procesan mediante <strong>Stripe</strong>. Nosotros nunca almacenamos ni tenemos acceso a los números o claves de seguridad de tus tarjetas bancarias.</p>
+                </div>
+                <div class="compliance-item">
+                    <h4>💵 Tarifas Claramente Desglosadas</h4>
+                    <p>En cada orden verás el costo transparente de tus platillos, la tarifa de envío del repartidor y una pequeña Cuota de Servicio fija destinada al mantenimiento tecnológico de la plataforma.</p>
+                </div>
+                <div class="compliance-item">
+                    <h4>🔄 Cancelación y Reembolsos</h4>
+                    <p>Una vez que el restaurante acepta tu pedido, no se permiten cancelaciones debido a la preparación inmediata de tus alimentos. Si tu orden presenta errores o llega incompleta, dispones de un lapso de 30 minutos para reportarlo y gestionar la devolución.</p>
+                </div>
+                <div class="compliance-item">
+                    <h4>🤝 Modelo de Negocio (Intermediación)</h4>
+                    <p>LoretoGo actúa únicamente como intermediario tecnológico. Los restaurantes son los responsables directos de la calidad de los alimentos y los repartidores de la entrega a domicilio correspondiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="margin-bottom: 15px; display: inline-block;">
+                    <span class="logo-loreto" style="color: white;">LoreTo</span><span class="logo-go">Go</span>
+                </a>
+                <p style="font-size: 0.85rem; line-height: 1.5; color: #718096;">
+                    La plataforma tecnológica de entrega a domicilio favorita de Loreto, Baja California Sur.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Legales</h4>
+                <ul>
+                    <li><a href="legalesUsers.html" target="_blank">Términos y Condiciones</a></li>
+                    <li><a href="avisoprivacidad.html" target="_blank">Aviso de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Soporte Técnico</h4>
+                <ul>
+                    <li><p style="color: #A0AEC0; font-size: 0.85rem;">¿Dudas con un cargo o pedido?</p></li>
+                    <li><a href="mailto:soporte.loretogo@gmail.com">soporte.loretogo@gmail.com</a></li>
+                    <li><p style="color: #718096; font-size: 0.8rem; margin-top: 5px;">Loreto, Baja California Sur, México.</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 LoretoGo. Todos los derechos reservados. Desarrollado en BCS, México.</p>
+            <p style="font-size: 0.75rem; color: #4A5568;">Sujeto a los términos de la LFPDPPP.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
