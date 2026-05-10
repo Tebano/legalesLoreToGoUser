@@ -10,7 +10,7 @@
     <meta name="author" content="LoretoGo">
     
     <meta property="og:title" content="LoretoGo | Tu App de Delivery en Loreto, BCS">
-    <meta property="og:description" content="La primera plataforma de entrega a domicilio 100% loretana. Rápida, confiable y segura.">
+    <meta property="og:description" content="La primera y única plataforma de delivery nacida en Loreto. Rápida, confiable y con orgullo local.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tebano.github.io/legalesLoreToGoUser/">
     
@@ -73,6 +73,7 @@
             display: flex;
             gap: 25px;
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
@@ -134,7 +135,7 @@
 
         .store-buttons {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
@@ -142,19 +143,28 @@
             background-color: var(--text-dark);
             color: var(--bg-white);
             text-decoration: none;
-            padding: 12px 24px;
+            padding: 12px 20px;
             border-radius: 10px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             transition: transform 0.2s, background-color 0.2s;
         }
 
         .store-btn:hover {
             transform: translateY(-2px);
             background-color: #2D3748;
+        }
+
+        .store-btn.web-btn {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .store-btn.web-btn:hover {
+            background-color: var(--primary-hover);
         }
 
         .hero-image {
@@ -164,40 +174,25 @@
             align-items: center;
         }
 
-        /* DUMMY MOCKUP PARA CAPTURAS */
+        /* MOCKUP CON TU CAPTURA REAL */
         .phone-mockup {
-            width: 280px;
-            height: 570px;
+            width: 270px;
+            height: 550px;
             background-color: #1A202C;
-            border: 12px solid #2D3748;
-            border-radius: 36px;
+            border: 10px solid #2D3748;
+            border-radius: 32px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            display: flex;
-            justify-content: center;
-            align-items: center;
             position: relative;
             overflow: hidden;
         }
 
-        .phone-screen-placeholder {
+        .phone-mockup img {
             width: 100%;
             height: 100%;
-            background: linear-gradient(180deg, #0EBFFE 0%, #05668D 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            color: white;
-            text-align: center;
+            object-fit: cover;
         }
 
-        .phone-screen-placeholder img {
-            width: 80px;
-            margin-bottom: 15px;
-        }
-
-        /* SECCIÓN CARACTERÍSTICAS (SEO OPTIMIZADO) */
+        /* SECCIÓN CARACTERÍSTICAS */
         .features {
             padding: 80px 5%;
             background-color: var(--bg-white);
@@ -253,10 +248,108 @@
             font-size: 0.92rem;
         }
 
-        /* SECCIÓN STRIPE (Cumplimiento obligatorio de políticas) */
+        /* SECCIÓN COBERTURA Y HORARIOS */
+        .coverage {
+            padding: 80px 5%;
+            background-color: var(--bg-light);
+            text-align: center;
+        }
+
+        .coverage-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+        }
+
+        .coverage-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coverage-info ul {
+            list-style: none;
+        }
+
+        .coverage-info ul li {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .coverage-info ul li::before {
+            content: "📍";
+            position: absolute;
+            left: 0;
+        }
+
+        /* SECCIÓN PARA SOCIOS (ÚNETE) */
+        .join-us {
+            padding: 80px 5%;
+            background-color: var(--bg-white);
+            text-align: center;
+        }
+
+        .join-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+        }
+
+        .join-card {
+            border: 1px solid var(--border-color);
+            padding: 40px 30px;
+            border-radius: 20px;
+            background: var(--bg-light);
+            text-align: left;
+        }
+
+        .join-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .join-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .join-btn {
+            display: inline-block;
+            background-color: var(--text-dark);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .join-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* SECCIÓN STRIPE */
         .stripe-compliance {
             padding: 80px 5%;
             background-color: #EDF2F7;
+            text-align: center;
         }
 
         .compliance-box {
@@ -288,6 +381,36 @@
 
         .compliance-item p {
             font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* SECCIÓN PREGUNTAS FRECUENTES (FAQ) */
+        .faq {
+            padding: 80px 5%;
+            background-color: var(--bg-white);
+            text-align: center;
+        }
+
+        .faq-container {
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-item h4 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .faq-item p {
+            font-size: 0.95rem;
             color: var(--text-muted);
         }
 
@@ -357,7 +480,7 @@
             .store-buttons {
                 justify-content: center;
             }
-            .compliance-grid {
+            .coverage-container, .join-grid, .compliance-grid {
                 grid-template-columns: 1fr;
                 gap: 25px;
             }
@@ -377,7 +500,9 @@
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#beneficios">Beneficios</a></li>
-            <li><a href="#seguridad">Seguridad y Pagos</a></li>
+            <li><a href="#cobertura">Zonas</a></li>
+            <li><a href="#unete">Socios</a></li>
+            <li><a href="#seguridad">Seguridad</a></li>
             <li><a href="legalesUsers.html" target="_blank">Términos</a></li>
             <li><a href="avisoprivacidad.html" target="_blank" class="btn-nav">Privacidad</a></li>
         </ul>
@@ -387,10 +512,13 @@
         <div class="hero-text">
             <h1>El sabor de Loreto, <br><span>directo a tu puerta.</span></h1>
             <p>
-                ¿Con antojo de unos tacos de pescado locales, comida gourmet o provisiones del súper? 
-                <strong>LoretoGo</strong> es la aplicación móvil de delivery diseñada para locales y visitantes en Loreto, Baja California Sur. Ordena de forma rápida, apoya al comercio local y recibe en minutos.
+                ¿Con antojo de unos buenos tacos de pescado, comida gourmet o provisiones para tu estancia? 
+                <strong>LoretoGo</strong> es la única app de entrega a domicilio nacida y criada en nuestro Pueblo Mágico, hecha con orgullo loretano para conectar a locales y visitantes con lo mejor de la región.
             </p>
             <div class="store-buttons">
+                <a href="https://loretogo.app.web" target="_blank" class="store-btn web-btn">
+                    🌐 Usar LoretoGo Web (loretogo.app.web)
+                </a>
                 <a href="#" class="store-btn">
                     🤖 Android (Próximamente)
                 </a>
@@ -402,34 +530,69 @@
         
         <div class="hero-image">
             <div class="phone-mockup">
-                <div class="phone-screen-placeholder">
-                    <div style="font-size: 4rem; margin-bottom: 15px;">🐧</div>
-                    <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 5px;">LoreToGo</h2>
-                    <p style="font-size: 0.85rem; opacity: 0.9; max-width: 180px;">[Aquí irá tu captura de pantalla de la App]</p>
-                </div>
+                <img src="https://raw.githubusercontent.com/Tebano/legalesLoreToGoUser/refs/heads/main/images/cap1.jpg" alt="Captura de Pantalla LoretoGo">
             </div>
         </div>
     </header>
 
     <section class="features" id="beneficios">
-        <h2 class="section-title">¿Por qué usar LoretoGo en Loreto, BCS?</h2>
-        <p class="section-subtitle">Conectamos la gastronomía local y los comercios del pueblo mágico con repartidores independientes comprometidos.</p>
+        <h2 class="section-title">¿Por qué pedir por LoretoGo?</h2>
+        <p class="section-subtitle">Conectamos el sabor local y los pequeños comercios con repartidores independientes dedicados.</p>
         
         <div class="features-grid">
             <div class="feature-card">
-                <span class="feature-icon">🌴</span>
-                <h3>Orgullo y Apoyo Local</h3>
-                <p>Somos una app desarrollada en Baja California Sur. Al pedir por LoretoGo, las ganancias de las comisiones se quedan en la comunidad y fortalecen la economía loretana.</p>
+                <span class="feature-icon">🌵</span>
+                <h3>Identidad 100% Loretana</h3>
+                <p>No somos una multinacional fría. Somos una plataforma loretana que entiende al pueblo, a su gente y apoya directamente a los restaurantes de la comunidad.</p>
             </div>
             <div class="feature-card">
-                <span class="feature-icon">⚡</span>
-                <h3>Entregas Ultra Rápidas</h3>
-                <p>Nuestros socios repartidores conocen cada rincón, calle y colonia de Loreto, asegurando que tu comida llegue caliente y a tiempo.</p>
+                <span class="feature-icon">🛵</span>
+                <h3>Logística Local Eficiente</h3>
+                <p>Nuestros repartidores independientes conocen perfectamente cada calle, atajo y rincón de Loreto, asegurando que tu orden llegue rápido y en perfectas condiciones.</p>
             </div>
             <div class="feature-card">
                 <span class="feature-icon">💳</span>
-                <h3>Pagos Flexibles y Seguros</h3>
-                <p>Elige tu método preferido. Paga cómodamente en efectivo al recibir tu pedido o utiliza tu tarjeta de crédito o débito de manera segura.</p>
+                <h3>Pagos Seguros y Flexibles</h3>
+                <p>Paga como prefieras: en efectivo directo al repartidor al recibir tu comida o de forma segura con tu tarjeta de crédito o débito nacional o extranjera.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="coverage" id="cobertura">
+        <h2 class="section-title">Zonas de Entrega y Horarios</h2>
+        <p class="section-subtitle">Llegamos a donde estés dentro de la zona urbana de Loreto, BCS.</p>
+        <div class="coverage-container">
+            <div class="coverage-info">
+                <h3>📍 Zonas donde entregamos</h3>
+                <ul>
+                    <li>Colonia Centro</li>
+                    <li>Miramar y zona hotelera</li>
+                    <li>Colonia Zaragoza</li>
+                    <li>Infonavit y colonias aledañas</li>
+                    <li><em>Próximamente cobertura ampliada a Nopoló</em></li>
+                </ul>
+            </div>
+            <div class="coverage-info">
+                <h3>🕒 Horarios de Servicio</h3>
+                <p>Operamos de la mano con los horarios de tus restaurantes preferidos.</p>
+                <p style="margin-top: 10px; font-weight: 500; color: var(--primary-color);">Abiertos todos los días desde el desayuno hasta la cena.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-us" id="unete">
+        <h2 class="section-title">Haz equipo con nosotros</h2>
+        <p class="section-subtitle">Queremos crecer de la mano de la comunidad de Loreto.</p>
+        <div class="join-grid">
+            <div class="join-card">
+                <h3>¿Tienes un restaurante?</h3>
+                <p>Digitaliza tu menú, llega a cientos de clientes nuevos (locales y turistas) y gestiona tus pedidos fácilmente con nuestra plataforma.</p>
+                <a href="mailto:soporte.loretogo@gmail.com?subject=Registro%20Restaurante%20LoretoGo" class="join-btn">Afiliar mi negocio</a>
+            </div>
+            <div class="join-card">
+                <h3>¿Quieres repartir?</h3>
+                <p>Conviértete en tu propio jefe, maneja tus propios tiempos y genera excelentes ingresos adicionales realizando entregas en tu moto o vehículo.</p>
+                <a href="mailto:soporte.loretogo@gmail.com?subject=Registro%20Repartidor%20LoretoGo" class="join-btn">Registrarme como Repartidor</a>
             </div>
         </div>
     </section>
@@ -442,20 +605,39 @@
             <div class="compliance-grid">
                 <div class="compliance-item">
                     <h4>🔒 Procesamiento Encriptado</h4>
-                    <p>Los pagos con tarjeta de crédito o débito dentro de LoretoGo se procesan mediante <strong>Stripe</strong>. Nosotros nunca almacenamos ni tenemos acceso a los números o claves de seguridad de tus tarjetas bancarias.</p>
+                    <p>Los pagos con tarjeta dentro de LoretoGo se procesan mediante <strong>Stripe</strong>. Nosotros nunca almacenamos ni tenemos acceso a los números o claves de seguridad de tus tarjetas bancarias.</p>
                 </div>
                 <div class="compliance-item">
                     <h4>💵 Tarifas Claramente Desglosadas</h4>
-                    <p>En cada orden verás el costo transparente de tus platillos, la tarifa de envío del repartidor y una pequeña Cuota de Servicio fija destinada al mantenimiento tecnológico de la plataforma.</p>
+                    <p>En cada orden verás el costo transparente de tus platillos, la tarifa de envío del repartidor y una pequeña Cuota de Servicio destinada al mantenimiento tecnológico de la plataforma.</p>
                 </div>
                 <div class="compliance-item">
                     <h4>🔄 Cancelación y Reembolsos</h4>
-                    <p>Una vez que el restaurante acepta tu pedido, no se permiten cancelaciones debido a la preparación inmediata de tus alimentos. Si tu orden presenta errores o llega incompleta, dispones de un lapso de 30 minutos para reportarlo y gestionar la devolución.</p>
+                    <p>Una vez que el restaurante acepta tu pedido, no se permiten cancelaciones debido a la preparación inmediata de tus alimentos. Si tu orden presenta errores o llega incompleta, dispones de 30 minutos para reportarlo y gestionar la devolución.</p>
                 </div>
                 <div class="compliance-item">
                     <h4>🤝 Modelo de Negocio (Intermediación)</h4>
-                    <p>LoretoGo actúa únicamente como intermediario tecnológico. Los restaurantes son los responsables directos de la calidad de los alimentos y los repartidores de la entrega a domicilio correspondiente.</p>
+                    <p>LoretoGo actúa únicamente como intermediario tecnológico. Los restaurantes son los responsables de la preparación e inocuidad de la comida, y los repartidores de la logística de entrega.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-subtitle">¿Tienes alguna duda rápida? Seguro encuentras la respuesta aquí.</p>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h4>¿Cuánto cuesta el envío en LoretoGo?</h4>
+                <p>La tarifa de envío se calcula de forma transparente según la distancia entre el restaurante seleccionado y tu ubicación. Siempre verás el desglose completo antes de finalizar tu orden.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Qué pasa si mi pedido llega mal o incompleto?</h4>
+                <p>No te preocupes. Reporta el incidente directamente a través del soporte de la app en los primeros 30 minutos tras recibir el paquete y te ayudaremos a gestionar el reembolso o corrección con el restaurante.</p>
+            </div>
+            <div class="faq-item">
+                <h4>¿Puedo pagar en efectivo si pido por la Web?</h4>
+                <p>Sí, tanto en la app móvil como en nuestra versión web (loretogo.app.web) puedes elegir pagar con efectivo directamente al repartidor en el momento de la entrega en tu puerta.</p>
             </div>
         </div>
     </section>
@@ -467,7 +649,7 @@
                     <span class="logo-loreto" style="color: white;">LoreTo</span><span class="logo-go">Go</span>
                 </a>
                 <p style="font-size: 0.85rem; line-height: 1.5; color: #718096;">
-                    La plataforma tecnológica de entrega a domicilio favorita de Loreto, Baja California Sur.
+                    La primera y única plataforma de delivery nacida en nuestro Pueblo Mágico, hecha con orgullo loretano para conectar a locales y visitantes.
                 </p>
             </div>
             <div class="footer-col">
