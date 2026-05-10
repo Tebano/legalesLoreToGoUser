@@ -5,18 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>LoretoGo | Comida a Domicilio en Loreto BCS | Delivery App</title>
-    <meta name="description" content="Pide comida a domicilio en Loreto, Baja California Sur. Disfruta de tus restaurantes favoritos con entregas rápidas. Pago seguro con tarjeta y efectivo.">
-    <meta name="keywords" content="Loreto, Loreto BCS, Loreto Baja California Sur, delivery Loreto, comida a domicilio Loreto, restaurantes en Loreto, pedir comida Loreto, LoretoGo, Loreto Go app">
+    <meta name="description" content="Pide comida a domicilio en Loreto, Baja California Sur con LoretoGo. La primera app hecha por loretanos, para loretanos. Entregas rápidas y pago seguro.">
+    <meta name="keywords" content="Loreto, Loreto BCS, Loreto Baja California Sur, delivery Loreto, comida a domicilio Loreto, restaurantes en Loreto, pedir comida Loreto, LoretoGo, Loreto Go app, hecha por loretanos para loretanos">
     <meta name="author" content="LoretoGo">
     
     <meta property="og:title" content="LoretoGo | Tu App de Delivery en Loreto, BCS">
-    <meta property="og:description" content="La primera y única plataforma de delivery nacida en Loreto. Rápida, confiable y con orgullo local.">
+    <meta property="og:description" content="La primera y única plataforma de delivery nacida en Loreto. Hecha por loretanos, para loretanos.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tebano.github.io/legalesLoreToGoUser/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "LoretoGo",
+      "operatingSystem": "Android, iOS, Web",
+      "applicationCategory": "FoodEstablishmentApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "MXN"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "1"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Loreto, Baja California Sur, Mexico"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "LoretoGo",
+        "url": "https://tebano.github.io/legalesLoreToGoUser/"
+      }
+    }
+    </script>
 
     <style>
         :root {
@@ -113,6 +142,20 @@
         .hero-text {
             flex: 1;
             max-width: 600px;
+        }
+
+        /* ETIQUETA FLOTANTE CON ORGULLO LORETANO */
+        .badge-loretano {
+            display: inline-block;
+            background-color: #EBF8FF;
+            color: #2B6CB0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 18px;
+            border-radius: 9999px;
+            margin-bottom: 20px;
+            border: 1px solid #BEE3F8;
+            letter-spacing: 0.5px;
         }
 
         .hero-text h1 {
@@ -510,14 +553,15 @@
 
     <header class="hero" id="inicio">
         <div class="hero-text">
+            <div class="badge-loretano">🌴 Hecha por loretanos, para loretanos</div>
             <h1>El sabor de Loreto, <br><span>directo a tu puerta.</span></h1>
             <p>
                 ¿Con antojo de unos buenos tacos de pescado, comida gourmet o provisiones para tu estancia? 
-                <strong>LoretoGo</strong> es la única app de entrega a domicilio nacida y criada en nuestro Pueblo Mágico, hecha con orgullo loretano para conectar a locales y visitantes con lo mejor de la región.
+                <strong>LoretoGo</strong> es la única app de entrega a domicilio nacida en nuestro Pueblo Mágico: una herramienta digital pensada por y para loretanos con el fin de conectar a la comunidad con lo mejor de nuestra región.
             </p>
             <div class="store-buttons">
-                <a href="https://loretogo.web.app/" target="_blank" class="store-btn web-btn">
-                    🌐 Usar LoretoGo Web (loretogo.web.app)
+                <a href="https://loretogo.app.web" target="_blank" class="store-btn web-btn">
+                    🌐 Usar LoretoGo Web (loretogo.app.web)
                 </a>
                 <a href="#" class="store-btn">
                     🤖 Android (Próximamente)
@@ -542,8 +586,8 @@
         <div class="features-grid">
             <div class="feature-card">
                 <span class="feature-icon">🌵</span>
-                <h3>Identidad 100% Loretana</h3>
-                <p>No somos una multinacional fría. Somos una plataforma loretana que entiende al pueblo, a su gente y apoya directamente a los restaurantes de la comunidad.</p>
+                <h3>Hecha por loretanos, para loretanos</h3>
+                <p>No somos una multinacional fría. Somos loretanos que entienden al pueblo, a su gente, y diseñaron un servicio que apoya de manera directa el desarrollo comercial de nuestra comunidad.</p>
             </div>
             <div class="feature-card">
                 <span class="feature-icon">🛵</span>
@@ -649,7 +693,7 @@
                     <span class="logo-loreto" style="color: white;">LoreTo</span><span class="logo-go">Go</span>
                 </a>
                 <p style="font-size: 0.85rem; line-height: 1.5; color: #718096;">
-                    La primera y única plataforma de delivery nacida en nuestro Pueblo Mágico, hecha con orgullo loretano para conectar a locales y visitantes.
+                    La primera y única plataforma de delivery nacida en nuestro Pueblo Mágico. Orgullosamente una app hecha por loretanos, para loretanos.
                 </p>
             </div>
             <div class="footer-col">
