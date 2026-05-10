@@ -68,6 +68,12 @@
             scroll-behavior: smooth;
         }
 
+        /* EVITA EL DESBORDAMIENTO HORIZONTAL EN MÓVILES */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--text-dark);
@@ -75,7 +81,7 @@
             line-height: 1.6;
         }
 
-        /* NAVBAR */
+        /* NAVBAR PREMIUM CON MENÚ HAMBURGUESA RESPONSIVO */
         nav {
             background-color: var(--bg-white);
             border-bottom: 1px solid var(--border-color);
@@ -93,10 +99,26 @@
             font-weight: 700;
             text-decoration: none;
             letter-spacing: -0.5px;
+            z-index: 1001;
         }
 
         .logo-loreto { color: var(--text-dark); }
         .logo-go { color: var(--primary-color); }
+
+        /* Ocultamos el Checkbox controlador y el icono del menú por defecto */
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--text-dark);
+            user-select: none;
+            z-index: 1001;
+            padding: 5px;
+        }
 
         .nav-links {
             display: flex;
@@ -123,6 +145,7 @@
             padding: 8px 16px;
             border-radius: 8px;
             transition: background-color 0.2s !important;
+            display: inline-block;
         }
 
         .btn-nav:hover {
@@ -215,11 +238,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100%;
         }
 
-        /* MOCKUP CON TU CAPTURA REAL */
+        /* MOCKUP TOTALMENTE RESPONSIVO */
         .phone-mockup {
             width: 270px;
+            max-width: 100%;
             height: 550px;
             background-color: #1A202C;
             border: 10px solid #2D3748;
@@ -506,27 +531,91 @@
             gap: 20px;
         }
 
-        /* RESPONSIVO */
+        /* ==========================================
+           REGLAS RESPONSIVAS PARA TABLETS Y CELULARES
+           ========================================== */
         @media (max-width: 768px) {
+            /* Navbar Móvil Flotante */
             nav {
-                flex-direction: column;
-                gap: 15px;
+                padding: 15px 20px;
+                position: relative; /* Clave para el posicionamiento absoluto del dropdown */
             }
+
+            .menu-icon {
+                display: block; /* Muestra las 3 rayitas del menú */
+            }
+
+            /* Los enlaces se transforman en una lista vertical oculta de fondo */
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--bg-white);
+                border-top: 1px solid var(--border-color);
+                border-bottom: 1px solid var(--border-color);
+                padding: 24px;
+                gap: 20px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+                text-align: center;
+            }
+
+            /* Hack de CSS puro para abrir/cerrar el menú sin usar un solo script */
+            .menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+            }
+
+            .btn-nav {
+                display: block;
+                width: 100%;
+                padding: 12px;
+            }
+
+            /* Ajustes de espacio general */
             .hero {
                 flex-direction: column;
                 text-align: center;
-                padding: 40px 5%;
+                padding: 40px 20px;
+                gap: 30px;
             }
+
             .hero-text h1 {
                 font-size: 2.2rem;
             }
-            .store-buttons {
-                justify-content: center;
+
+            .features, .coverage, .join-us, .stripe-compliance, .faq {
+                padding: 40px 20px;
             }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .section-subtitle {
+                margin-bottom: 30px;
+            }
+
+            /* Corregimos el padding interno excesivo de las tarjetas en celular */
+            .compliance-box, .coverage-container {
+                padding: 24px 16px;
+            }
+
+            .join-card, .feature-card {
+                padding: 30px 20px;
+            }
+
+            /* Forzamos que las columnas se apilen verticalmente */
             .coverage-container, .join-grid, .compliance-grid {
                 grid-template-columns: 1fr;
                 gap: 25px;
             }
+
             .footer-bottom {
                 flex-direction: column;
                 text-align: center;
@@ -540,6 +629,10 @@
         <a href="#" class="logo">
             <span class="logo-loreto">LoreTo</span><span class="logo-go">Go</span>
         </a>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#beneficios">Beneficios</a></li>
